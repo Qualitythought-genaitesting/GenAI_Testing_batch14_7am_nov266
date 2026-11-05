@@ -1,0 +1,375 @@
+Good Morning !!!!!
+==============================================================================
+1. What is Gen AI ?  Done
+2. how is it impacting the software testing? 
+deterministic to non deterministic 
+
+to create test cases / test plans / to identify defects we can use AI in your regular testing 
+
+=> with AI we speed up our work. productivity will increase with the help of AI in your testing. 
+example : playwright  => automation tool. 
+=> playwright agents => to do automation 
+https://playwright.dev/docs/test-agents
+
+3. AI powered testing in your project?
+we need to implement not only traditional automation but also implement playwright kind of agents to automate basic scenarios quickly.
+
+=> playwright agents 
+=> testim
+=> testregor  => intelligent automation tools => 
+=> katlaon => 
+
+4. Prompt engineering ? how is this helpful to the software tester?
+prompt engineering : 
+helping the customers or tester to use AI application effectively. 
+
+it defines how to ask a question to the AI brain ? 
+
+writing the prompt is very imp : prompt  => ask or question to AI 
+
+how to write prompt : 
+bad prompt => write test cases for otp login facility 
+
+Good prompt => write 20 test cases for ecommerce application login facility with mobile number and otp. these testcases must be in a table with test case ID, summary, pre requisite, test steps , test data , expected result . 
+
+if your question is not clear ? can I able to answer ?  => No 
+i need more explanation the same way AI brain also expecting some more information to give accurate response to the question. 
+
+prompt anatomy: building blocks of a good prompt. 
+=============================================================================
+
+1. Task : what is the ask or question 
+2. Role : which role as an AI i need to play
+3. Rule : constraints or filters or limitations 
+4. context: background story or more information about the question
+5. Output: in which format you want the output 
+=============================================================================
+
+Task: write test cases for mobile number otp login functionality 
+Role : Software tester with 5 years experience 
+Rule : only 20test cases 
+context : this application is ecommerce application 
+output: test cases in excel 
+==============================================================================
+LLM based application => customer support agents => 
+==============================================================================
+5. IS traditional testing sufficient to safeguard your job? 
+   a. manual testing 
+   b. automation testing 
+   c. DB testing 
+   d. API testing 
+No ! 
+a. Use AI tools to speedup your traditional testing  [ Prompting]
+Playwright with agents 
+
++ 
+
+b. chatbots/agents for repetitive manual workflows => n8n etc.... Lanchain/langfuse/crewAI => frameworks 
+we need to test these developed RAG/Agent based applications with ease. 
+RAG based chatbot  => QTchatbot  => 
+
+6. Current market trends 
+==============================================================================
+Ram prasad => 20 years of IT experience in different roles 
+==============================================================================
+1. How many of you are still working on Manual testing ? 30% 
+2. how many of you asking your questions to the google search ? 
+
+1. What is Gen AI : 
+
+It is not like your traditional application , it store the information and retrieve from the stored information. 
+
+instead, your Gen AI applications [ Generative AI] generate the answer only for you instantly . 
+
+Think like a human and generate the answer from your previous pattern learning. 
+
+examples: chatgpt , claude , perplexity and gemini these are the tools or chat which are generating response for your question. 
+
+difference between your current applications like web/mobile etc... and gen AI is:
+
+Deterministic output :
+=======================
+traditional /current applications are more deterministic => 
+how many no of times you do perform the same operation => output remain same
+if you execute one testcase with same test data 100 times  => same answer
+
+Expected Result == Actual Result 
+Manual testing 
+Automation testing 
+
+Non Deterministic : instantly it is generating : 
+=================================================
+
+Gen AI application : it not deterministic like your traditional application. 
+it is not retrieving answer from the stored data. 
+=> while generating the answer instantly we do not get the same output again and again. 
+
+text or matter is not same but meaning should be similar. 
+
+so traditional testing is not sufficient to do Gen AI testing . 
+
+
+Expected Result == Actual result  => X  it will fail 
+
+so we need to adopt the new testing strategy for the Gen AI applications. 
+==============================================================================
+New test strategy we are applying for the Gen AI application.
+
+No exact match is applicable like traditional testing . 
+why it is not applicable as attempt#1 answer is not same as attmept#2 for the same question. AI brain [ LLM - Large Language Model] will generate instantly not retrieving . 
+
+New strategy : 
+
+instead of exact match we need to test the generated response based on the meaning and criteria we defined. 
+
+Meaning : attempt#1 answer is really helping the tester to generate or to use these 20 testcases in  their project. 
+
+  attempt #2 answer is really helping the tester to generate or to use these 20 testcases in their project. 
+
+Yes, 
+
+output generated by AI brain must be useful for the customer.
+
+a. correctness : Answer is correct or not ? in terms of % => how much percentage of answer is correct? 
+
+b. Relevancy: Answer is relevant to the question? how much percentage of relevancy ? 
+
+c. Factuality: Answer is factual ? how much percentage of answer is true? 
+
+d. Faithfulness : Answer is faithful ? safe to use the answer ? safety measurement
+                       
+Meaning and provided conditions/criteria's:  
+
+suppose the question is write a story by using animal - penguin and place tropicana island a comedy story. 
+
+criteria:
+a. Is this answer is polite ? 
+b. is this answer is children friendly ? 
+c. is this story is fun story?
+d. is the main character is penguin in this story?
+
+=> exact match with expected result but 
+it should satisfy the criteria we mentioned in the test. 
+==============================================================================
+ how do we test these Gen AI applications or non deterministic/ probabilistic applications in the real time: 
+
+Traditional application testing approaches:
+
+a. Manual testing  =>  a tester will compare the expected result with actual result   if both are same he can make it as PASS, if any deviation => log a defect with evidences. 
+
+b. Automation testing  => A tester will take the help of a tool to compare the expected result == with actual result . 
+if tool able to get the true for the comparison then it is PASS
+comparison false  => we can fail the test case. 
+
+assertions are more deterministic  => PASS/FAIL  => comparison by tool.
+
+Now, exact match is ruled out : 
+
+Non deterministic testing : 
+
+we do not compare exact expected output with actual generated answer instead we need to compare the meaning with the help of criteria. 
+
+1. Manual testing : Human evaluation => human brain will evaluate the criteria we mentioned in the expected result or compare the meaning with expected output meaning . 
+
+here human evaluator domain knowledge , experience in this application matters in deciding the answer is meeting the criteria or not. 
+
+criteria defined by Gen AI tester , like your traditional test case design. 
+possible expected result with important points we mentioned in the expected output . 
+
+
+2. Automation testing with deterministic assertions : tools =>, prompfoo, DEEPEVAL and RAGAS.
+
+instead whole answer exact match we can test the answer with 
+simple assertions : output contains  these keywords [words .....]
+does not contains this  => 
+is output is html file /java file / python 
+is it contain html /python 
+
+3. LLM as a JUDGE : you need to hire a AI brain to test 
+your answer verified by AI brain by following the criteria 
+
+Ask a question to the Chatgpt : 
+
+suppose the question is write a story by using animal - penguin and place tropicana island a comedy story. 
+
+produced answer is contain these criteria: LLM brains job to decide whether the answer is following the criteria's you mentioned . 
+
+criteria:
+a. Is this answer is polite ?  LLM will verify is this answer polite or not 
+if polite go for pass / if not fail.
+
+b. is this answer is children friendly ?  LLM will verify this answer is children friendly or not 
+
+c. is this story is fun story? LLM will verify this answer is generate some fun or not 
+
+d. is the main character is penguin in this story? LLM will verify this answer is maintaining penguin as a main character or not. 
+
+prompt foo is useful this LLM as a judge . so you do not required much coding / Low code automation. 
+
+=> you define criteria through simple configuration and LLM will test and share the results. you need review the results and confirm the output. 
+==============================================================================
+Gen AI /Gen AI => 
+Generative AI => now this Gen AI also having some application types : 
+
+a. RAG : Retrieval Augmented generation => Application=>
+
+AI brain or LLM generate the answer for your question . 
+only brain think and respond to the question [ not capable to perform an action]
+
+we feed our documents or company information to the RAG application and this RAG application will retrieve the right document when we ask a question from that retrieved document LLM will generate the response. 
+
+b. Agent based application  => AI brain + hands => capable to perform an action with the help of tools. 
+
+LLM + tools => LLM brain will call the tools to perform an action. 
+
+example: you have email application. 
+you integrated your email app with my agent => 
+agent will understand the inbox , compose , spam , delete emails 
+=> action => tool for LLM 
+if you want to read a new email => which tool we need to use 
+inbox tool will be activated by LLM 
+delete tool will be activate by LLM 
+
+compose tool will be activated by LLM 
+
+LLM and tool will communicate through Json format like APIS. 
+Req and response 
+LLM => request the tool with certain arguments /inputs  => tool is activated and act on the task => send back the response to the LLM 
+LLM polish the output received by tool and produce the output for you 
+
+reply to your email 
+read the email 
+delete the email
+empty the spam 
+Agent => LLM + tool => AI brain + hands 
+==============================================================================
+
+Outcome: 
+1. differences between traditional testing and Gen AI testing .
+2. deterministic testing strategy 
+3. non deterministic testing strategy -
+   3.1  correctness with respect to the meaning 
+   3.2  relevancy with the question 
+   3.3  Factuality with the evidence 
+   3.4  faithfulness with safety checks 
+4. Different types of LLM based applications 
+   4.1 RAG application retrieving the answer from provided doc sources 
+   4.2 agent applications => doing the task like a human => LLM +tools 
+
+5. Playwright agents are important to make your self compete with the Job descriptions 
+
+https://playwright.dev/docs/test-agents
+
+6. 
+6.1 using the AI :
+
+You can use AI for your regular tasks => copilot or chatgpt or claude to generate testcases for user stories / test plans for requirements ....etc.
+STLC 
+
+6.2 testing AI based applications : 
+    criteria based applications testing 
+
+7. approaches for gen AI applications.
+
+7.1 human evaluation  => huma evaluating the criteria 
+7.2 deterministic automation => tool is evaluating the criteria
+7.3 LLM as a judge / probabilistic automation => LLM is evaluating the criteria
+
+for current job openings , please have a look at this link : 
+
+https://learn.qualitythought.in/blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
