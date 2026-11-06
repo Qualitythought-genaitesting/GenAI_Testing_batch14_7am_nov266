@@ -1,0 +1,196 @@
+Good morning !!!!!
+====================
+Recap! 
+
+1. What is Gen AI ? 
+2. RAG and agent based application 
+3. diff between traditional testing and Gen AI testing?
+4. How AI or AI agents helping the software testing with prompt engineering.
+
+Playwright in your computer: 
+
+1. Download and install VSCODE 
+2. Download and install nodejs  => playwright developed in JS 
+3. LLM [AI brain] => GitHub copilot => GitHub account 
+4. Install and launch GitHub copilot in the VSCODE as a plugin 
+5. Login with your GitHub account 
+6. ask in the copilot => Answers questions about your code without making changes
+Ask is an example for Gen AI application.  only AI brain => you can ask a question , as a copilot I should provide answer only . not a code edit or file edit in the code base.
+
+7. Agent in the copilot  => Edit files in your workspace in agent mode
+
+agent is an example of agent based application. AI brain + hands to perform the task  => code change 
+
+8. install the playwright => playwright is a modern web automation tool 
+npm init playwright@latest 
+9. Setup playwright agents => to do so follow the steps :
+run the command:
+
+npx playwright init-agents --loop=vscode
+
+or 
+https://playwright.dev/docs/getting-started-mcp
+in the website => select VSCODE and install the Playwright MCP plugin 
+
+if it is done correctly , then you are able to see three agents in the 
+.GitHub >> agents  >> 
+🎭 planner explores the app and produces a Markdown test plan
+🎭 generator transforms the Markdown plan into the Playwright Test files
+🎭 healer executes the test suite and automatically repairs failing tests
+
+Gen AI / agent application practically we are experiencing those keywords into our todays practical session. 
+
+1. we need to use these 3agents and understand how agent simplifying the manual task with ease and speed. 
+
+playwright-test-planner: 
+
+As a tester , I would like to generate the test plan for drugs.com 
+by using test-planner agent we can do ==> Use this agent when you need to create comprehensive test plan for a web application or website
+https://www.drugs.com/
+
+prompt  => Agent [planner agent] => MCP server [ playwright]=> tools call => perform action => deliver output 
+
+Just you supplied a prompt to the agent [ planner agent] => setup everything for you as a outcome. => testplan 
+
+prompt  => agent  => MCP server =>agent loop[ tools => perform task => provide the output ]
+tool#1 => click on button 
+tool#2 => select the option 
+tool#3 => type the message 
+tool#4 => screen shot capture 
+
+
+finally you received a test plan for your drugs.com 
+
+second agent : 
+
+Generator : 
+Use this agent when you need to create automated browser tests using Playwright 
+Examples: Context: User wants to generate a test for the test plan item.
+
+==============================================================================
+2. if you are a gen AI tester - how you can test these agents. 
+
+writing prompt and receiving the file is not sufficient. 
+
+we need to dig more what are the tools list available 
+in which order we are calling these tools 
+are we supplying the right arguments/ inputs to each tool 
+generating the right output 
+
+tool order we need to check 
+any tool failure ?
+any extra tool which is not in your tools list ? 
+
+=> AI brain ? => model: Claude Sonnet 4.6
+
+this model used to create the test plan as per your agent instructions 
+
+
+
+Agent = AI brain [ claude] + tools 
+
+cluade  + MCP server+ tools: create test plan 
+  - search
+  - playwright-test/browser_click
+  - playwright-test/browser_close
+  - playwright-test/browser_console_messages
+  - playwright-test/browser_drag
+  - playwright-test/browser_evaluate
+  - playwright-test/browser_file_upload
+  - playwright-test/browser_handle_dialog
+  - playwright-test/browser_hover
+  - playwright-test/browser_navigate
+  - playwright-test/browser_navigate_back
+  - playwright-test/browser_network_request
+  - playwright-test/browser_network_requests
+  - playwright-test/browser_press_key
+  - playwright-test/browser_run_code_unsafe
+  - playwright-test/browser_select_option
+  - playwright-test/browser_snapshot
+  - playwright-test/browser_take_screenshot
+  - playwright-test/browser_type
+  - playwright-test/browser_wait_for
+  - playwright-test/planner_setup_page
+  - playwright-test/planner_save_plan
+
+
+
+together created the test plan for drugs.com 
+===========================================================================
+
+1. manual tester : 
+
+a. learn automation => playwright end to end with framework 
+b. Gen AI tester  => prompts => tests 
+   1. RAG 
+   2. single agent 
+   3. Multiple agents 
+   4. MCP agents 
+   5. Agentic AI or Agentic RAG 
+
++ Red team => attacking the AI brain => to make it wrong answer 
+   => promptfoo tool is required to get success 
+
+little coding sense: 
+
+ python => absorb little development  => RAG /Agents => 
+ unit testing  => python and pytest 
+ Deepeval =>agents 
+ RAGAS => RAG 
+=============================================================================
+
+
+Gen AI testing : 
+
+week#1 we will teach you AI basics or imp keywords => 
+week#2 prompt engineering + Red teaming [ attackers mindset]
+Week#3 capstone project to practice the prompting => drugs.com
+Week#4 RAG application testing  => Capstone 
+one to one meeting  => refine resume  => 
+
+Week#5 Agent application testing  => capstone 
+Week#6 promptfoo - eval 
+Week#7 promptfoo - redteaming 
+one to one meeting  => going with promtfoo only or unit testing 
+week#8&9 => python 
+week#10/11=> development - RAg and agent 
+Week12/13 => Deepeval/RAGAS 
+
+one to one meeting  => mock interview  => calendly tool : 
+
+weekly 5 days mode  => weekend is specially for practice : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
