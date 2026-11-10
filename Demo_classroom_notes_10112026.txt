@@ -1,0 +1,131 @@
+Good Morning !!!!!
+=====================
+Today We would like to discuss => 
+
+1. what is Gen AI testing ? 
+2. how do you [ manual tester or automation tester] transform into the Gen AI testing?
+=> need to change your test strategy. 
+
+3. pre requisites to learn Gen AI testing ? 
+
+your existing testing experience is sufficient to start your journey. 
+
+4. What we teach in this course ? 
+
+we will teach from basics to master level. 
+
+=> what is LLM from this point you can test LLM based application like 
+
+if you ask a question => replying to you from Knowledge base. Ai brain works for you to generate the response 
+
+RAG application => Retrieval augmented generation 
+Retrieval testing 
+generation testing 
+
+=> brain + hands  => LLM + tools  => 
+Agent based applications  => single /multi agents /MCP agents 
+tools selection 
+tool sequence 
+trajectory 
+
+Agentic RAG => 
+
+
+10 weeks schedule : 
+
+week#1 => genAI basics 
+week#2 => prompt engineering  & Red teaming 
+Week#3 => capstone project => drugs.com/seach/ai 
+Week#4 => RAG & agent applications => human evaluation => capstone 
+week#5&6 => promptfoo => Eval and redteaming 
+week#7 &8=> python basics to understand more coding aspect of RAG and agents 
+week#8&9,10 => RAG development / Agent development and how to test developed code with pytest /Deepeval and Ragas  => 
+
+=> one to one meeting with every learner . 
+
+5. Current job market for Gen AI testing ? 
+
+Ram prasad  => 20 years of IT experience . 
+
+Traditional testing to Gen AI testing : 
+==============================================================================
+Traditional testing : Deterministic testing 
+==============================================================================
+
+Traditional testing is nothing but your web application testing , api testing , DB testing , mobile app testing ...etc...
+
+in these application we do follow testing strategy as 
+
+Expected result == Actual result  => exact match case we are considering for the test result 
+if you execute this test case now or later / by you or you friend  we can get same result . 
+
+execute it once or twice or thrice or 100 times  => the output remain same. 
+
+output remain same , expected result == actual result or 
+                     expected result != actual result 
+
+Login test case : suppose if you supply valid user name and correct password then only we can successfully logged in. 
+
+We are retrieving the information from saved DB
+==============================================================================
+chatgpt : can you get the same answer again for your same question. 
+
+In the Gen AI applications the generated answer is not same for all users. why because it is generated on the fly for you only. 
+
+we do not retrieve instead we are generating with the AI brain. it is thinking about your question and generate the response. 
+
+=> it should not be same as previously generate response. 
+
+so we can not use same strategy expected result == Actual result . This stragy will fail based on our discussion. 
+
+=> this example is defining how Gen AI is different from traditional application. 
+
+New strategy applicable to gen AI applications. 
+
+we are trying to compare the meaning instead of exact test mentioned in the expected result. 
+Expected Result == Actual result  => Exact match  [ X ]
+Expected result meaning  is equal to actual result meaning 
+
+Accuracy ! => first attempt =>  3/5 attempts 
+>= 0.75 then only pass 
+
+ 
+=> correctness of the generated answer with the expected answer 
+=> relevancy of the generated answer to the question you asked 
+=> Factuality of the generated answer with respect to the reference. from where[ document/ link / source] you generated this answer 
+=> Faithfulness of the generated answer with respect to the safety rules 
+
+
+our manual testing , automation testing need to be followed these new test strategies .
+
+all these approaches we classified into 3 types : 
+
+a. human evaluation : Manual testing 
+=> A human brain will compare the meaning of expected result with the actual generated response. 
+=> tester knowledge / experience matters here to validate the responses 
+=> tester define criteria to test or compare between actual and expected answers.
+
+b. Deterministic evaluation : Automation testing : Tools 
+traditional testing : selenium /playwright / test complete/ tosca/ cypress etc.. 
+
+adding contains / not contains / equals / is-html / is-json/ contains-html / latency / cost => 
+
+same way we do have different tools in Gen AI testing as well= promptfoo 
+
+other tools are unit testing tool => white box testing tools => DEEPEVAL and RAGAS 
+
+c. LLM as a Judge : non deterministic testing :
+
+we are inviting another AI brain to test your application. 
+simply tool X . 
+adding the artificial intelligence to the tool to verify the responses. 
+
+=> human evaluation is automated with the AI brain. [ LLM => large language model ] 
+chatgpt  => gpt6 [LLM ]
+
+verifying the generated response is following the criteria we defined in the expected result. 
+
+it is not like your exact match in the traditional testing . 
+
+promptfoo => deterministic and non deterministic verifications 
+==============================================================================
