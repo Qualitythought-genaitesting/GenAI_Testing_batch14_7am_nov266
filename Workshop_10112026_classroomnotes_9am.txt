@@ -1,0 +1,151 @@
+Thanks for joining with us !!!!!
+
+Quality Thought's Gen AI testing workshop 
+
+1. what Gen AI ? different types of applications which we able to test! 
+
+=> Done
+
+Generative AI :  ask a question and get the answer 
+
+a. RAG application => retrieval augmented generation 
+retrieval of  answer from the knowledge base . 
+
+suppose if you supply 2000 documents to AI brain => AI brain will able to answer from those 2000 documents only . 
+
+it complete a task : 
+b. Agent based applications => 
+   1. single agent 
+   2. multiple agents 
+   3. MCP based agents 
+LLM [ AI brain] +tool [hands] 
+
+2. How these Gen AI applications are different from your web applications / apis / DBs ?  Done 
+
+3. Is this current testing strategy you applying to your application is still applicable for Gen AI app testing ?  Done 
+4. Current market with respect the openings !  => done 
+5. how to transform ! => 
+
+a. Explore what is Gen AI and try to play with Gen AI applications like chatgpt /perplexity / claude / gemini for speeding up your testing . 
+
+b. prompt engineering 
+c. red teaming 
+d. proptfoo kind of no code automation tools open AI company . open source / enterprise. 
+
+e. DEEPeval and RAGAS unit testing . python is mandatory . 
+
+
+
+
+
+
+
+
+
+==============================================================================
+1. how many of you using chatgpt or similar kind of tools regularly for your testing needs? 
+
+2. how many of you still working on Manual testing ? 
+
+=> Is manual testing  safe to move on in 2027? => 
+==============================================================================
+
+what is Gen AI testing ? 
+
+Generative AI => artificial intelligence => A machine can think like a human and able to retrieve the answer from knowledge base or learning . 
+
+Generative AI => generation of answer for your query. 
+it is not like your traditional applications => to retrieve the answer or information from the database or data sources. Instead it generate the response. 
+
+=> chatgpt => you are asking a question. 
+write test cases for login functionality of e commerce application. 
+
+generated output: list of test cases . 
+
+
+if you ask the same again !  => can you get the same response again. 
+we are not guarantee the same response. 
+
+attempt#1  answer #1 
+attempt#2  answer #2 
+attempt#3  answer #3 
+
+that is the difficulty we need to solve in our new testing strategy. it is not deterministic .
+it is probabilistic so we can not judge the test case output based on your current testing strategy . 
+Expected result == Actual result  PASS 
+Expected result != Actual result FAIL 
+
+is this workout for us in the Gen AI application ?  X  => exact match is rules out. then what is our new test strategy!
+=> instead of exact match we need to test output meaning => 
+expected result meaning should be similar to actual output meaning 
+=> criteria based testing 
+we define couple of rules in the expected results => 
+
+=> write a story with penguin and tropical island which should be adventures child friendly and fun .
+
+output : Story main character is penguin or not ? 
+         the place tropical island 
+         story must adventures    
+         story should children friendly 
+         at least you laugh while reading the story 
+
+we will verify in three possible approaches: 
+
+1. human evaluation => Tester brain or human brain check the above criteria with human intelligence and make sure whether it is meeting the criteria. 
+
+human brain testing the AI brain generated response 
+
+
+2. Automation testing : 
+
+a. Deterministic automation => tool based =>  Assertions => 
+is this story contains penguin keyword ? 
+not contains "I am sorry , not able answer" 
+
+b. LLM as a judge => Tool + AI brain => 
+AI brain testing another AI brain generated response. 
+one AI brain testing another AI brain based on the criteria you provided .
+=============================================================================
+
+
+
+testing criteria : 
+
+Is this a fun, child-friendly story featuring a penguin on a tropical island, it should be a adventure?
+
+Criteria:
+1. Does it mention a penguin as the main character?
+2. Does the story take place on a tropical island?
+3. Is it entertaining and appropriate for children?
+4. Does it have a sense of fun?
+
+==============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
