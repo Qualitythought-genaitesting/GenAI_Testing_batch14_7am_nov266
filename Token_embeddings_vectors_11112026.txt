@@ -1,0 +1,125 @@
+Good Morning !!!!!
+==================
+Recap! 
+We understand the differences between traditional testing and Gen AI testing 
+Traditional testing is deterministic 
+We are depending the exact match as a test strategy 
+expected result == Actual result 
+we need to decide whether the test is pass or fail with one go ! 
+=> UI / apis / backend 
+=> Web apps /desktop / mobile apps etc...
+
+Gen AI testing is non deterministic 
+Expected meaning should be similar to generated response meaning 
+We nee to consider the average of 3 to 5 attempt for every test as it is not deterministic [ probabilistic]. 
+here we need to consider :
+1. correctness 
+2. relevancy 
+3. factuality 
+4. Faithfulness 
+Question or prompt or ask is a test case => no different types of testing 
+
+Different types of Gen AI application :
+=> RAG  application 
+=> single agent 
+=> multi agent application 
+=> MCP application 
+=> Agentic RAG 
+
+the only possible way to connect with AI application is prompt or question or ask. 
+
+prompt engineering is a key skill to the user or tester to generate the accurate response from AI brain.  
+
+=> Chatgpt  => Ask a task or problem or question to the AI brain => 
+
+Ask a question => Prompt 
+
+
+prompt  => AI brain[LLM ] => Generate the response 
+Large Language model => it will understand you natural language question and process the generation . 
+
+=> LLM should not understand natural language like you - behind the scenes so many step by step process is happening to generate the response . 
+
+1. => Token => we are calculating AI charges with in the no of tokens => tokens cost . 
+token expired ! 
+
+Token => 3/4th of a word  
+=> AI brain or LLM can understand only numbers or numeric or math => 
+so your question must be translated or converted into machine understandable numbers. 
+
+2. tokenizers  => each AI brain do have their own tokenizer. 
+
+tokenizer is a program to convert plain English question into machine understandable numeric formats .
+
+gpt 5 : AI brain name  => LLM model 
+
+[4827, 382, 11820, 20837, 11493, 19740, 176289, 2647, 1490, 328, 3645, 261, 40, 9391, 30, 220]
+
+gpt4: previous AI brain name  => 
+
+[3923, 374, 9500, 15592, 7649, 18072, 849, 21435, 2204, 955, 315, 4173, 264, 40, 8522, 30, 220]
+
+gpt 3: 
+
+[2061, 318, 5215, 9552, 4856, 5633, 198, 18438, 391, 1180, 2099, 286, 2429, 257, 40, 5479, 30, 220]
+
+Question => AI brain => generated the response 
+
+Question => tokens => AI brain => token => Generation [ Natural language response] 
+
+Tokenization	Divides text into tokens
+Token IDs	Converts tokens into numbers
+Embeddings	Converts token IDs into numerical vectors that the neural network can process
+
+Vector DB : to store these numerical token IDs or tokens or your question your data with in the AI applications we use vector DB. 
+
+PGvector / chromaDB etc... these are examples for your vector DB
+
+vectors  => these token IDs will be saved in the vector db as a vectors => 
+
+Google maps : Hyderabad  => coordinates  => Lan/ Lat => 
+
+multi dimensional coordinates 
+
+SQL => No SQL => graphSQL 
+MYSQL /ORACLE/PORSTGRES/ monogo  => Databases which can store data in your traditional applications
+
+1. LLM => AI brain to process user question
+2. prompt => user request or question => ask => natural language 
+3. token => LLM will consider only tokens => numerical statical data 
+4. Tokenizer => converting these natural language request into token IDs
+5. embeddings => converting this token id into numerical vector 
+6. Vector  => a simple position in the space with coordinates [0.1,0.3, 5,6,7,8,90,10,345]
+
+7. Vector DB => Vector space to store all these vectors 
+8. cited answer => answer is having the reference 
+
+You type “Can I take ibuprofen with blood-pressure meds?” → tokens → embedding/vector → vector DB finds interaction pages → LLM reads those pages + your question → safe, cited answer.
+
+you need to convey the information with clear instruction in a smart way. 
+
+tokens count =  inputs keywords + output key words ai generated. 
+prompt engineering ! => for testing 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
