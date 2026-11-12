@@ -1,0 +1,173 @@
+Good morning !!!!!
+======================
+Recap!
+
+We understand different basic keywords .
+
+1. LLM 
+2. tokens /tokenizer
+3. Embedding 
+4. Vectors and vector DB 
+
+=> Types of Gen AI applications : LLM based application 
+behind the scenes LLM is used to generate the response. 
+
+LLM based applications broadly classified into 2 types: 
+
+a. Gen AI applications => Generating the responses => LLM will generate the answer for your questions. 
+
+User ask => LLM => Generate answer 
+
+for your question we are generating the answer with the help of LLM 
+
+
+1. Fine tune application : 
+LLM => trained on large amount of data  => Pretrained LLM 
+
+now If some updated are happening in the market after training , that updates are not available with that pre trained model. 
+only the trained data is the scope to generate answer.
+
+2026 oct 25th upto this date we trained the model , so this model can able to answer upto 25th oct 2026 information only. 
+
+a new drug or new version of AI is release after the 25th oct 2026 , that update our pre trained model is not able to provide you. 
+GPT3 is example for this => for specific domain related project . 
+
+1. Training is needed for every update or changes => 
+2. training is complex task and costly task => 
+3. your proprietary data need to be shared with LLM for the training . 
+ 
+so customer do not generate the answer for latest things which are not yet trained. this model is not up to date. 
+
+2. RAG applications : it is providing a flexibility to retrieve the information from the knowledge base without train the model 
+
+model is using your knowledge only at the runtime to generate answer and it does not required training on your proprietary ?
+
+a. reducing the training cost /time 
+b. your data privacy . 
+
+
+Retrieval : We do have a program called retrieval.py  => this is working like a search feature with in your web applications. 
+
+based on your user query or ask => retriever will able to retrieve the matching documents  
+=> everything is a number game  => 
+document => numbers => numerical vectors ? yes 
+
+=>Question =>  tokens => tokenizer => embeddings => vectors => vector DB => LLM => generation 
+
+with slight changes => 
+
+first step : what is your knowledge base  => collection of document 
+repository => where all needful documents exist with in the company => library 
+
+File upload  => to add a new document to the KB [ knowledge Base] 
+
+added one document  => AI should not able to consider this whole document at a time . 
+
+first we need to split this document into pieces => a piece is a simple sentence with meaning . 
+
+a paragraph representing some information . 
+example : leave policy a document 
+document can able splits into multiple pieces based on meaning 
+
+chunking : split the document into small pieces . 
+each piece is known data chunk 
+
+part1: no of leaves per year 21. including sick leaves , com offs , casual leaves. 
+
+part2: only 10 leaves per year can carry forward . 11 th leave balance exist in your account expired by dec-31st you can use it or it will expire. 
+
+
+prart3: paternity leave 
+
+part 4 : maternity leave 
+
+part 5 leave policy when your in notice period 
+
+second steps : embedding = data chunks converted into vectors [ meaning ful vector] 
+
+ 3rd step : these vectors  => Vector DB 
+
+storing the data into vectors DB 
+
+chunks => 
+Query => tokens  => token ids => embedding model  => vectors => vector DB
+document  => data chunks => embedding model => vectors  => vector DB
+Now => customer comes to the picture 
+
+=> User Asks => tokens => token IDs  => vectors => 
+for this question what chunks are useful to generate the answer 
+who will help LLM to retrieve the chunks from Vector DB to generate the answer => retriever => a program to retrieve the matching chunks for the question or prompt asked by customer 
+
+on what basis this retriever retrieve the chunks => cosine similarity score 
+a mathematical formula to compare between different chunks .
+ipad in your amazon => 
+ipad related results appearing ?  the same way.
+
+if you ask casual leaves  => retriever 
+
+part1: no of leaves per year 21. including sick leaves , com offs , casual leaves. 
+
+augment : add these retrieve chunks to the prompt / question => combining the retrieved chunks + prompt and send them to LLM to generate the response.
+
+question + retrieved chunk to LLM 
+
+Generation : LLM will understand question and able to generate the response from the retrieved context or chunks 
+
+KB is a library => 
+
+librarian : 
+
+customer  :  Librarian => Hitler life => couple of books  => which books helpful to you 
+open book exam to the AI brain => 
+
+KB => document splits into chunks  => embeddings => vectors  => Vector DB 
+
+Customer ask => Retrieve right chunks [ find the right matchings through the search => vector DB] => augment [chunks + question] => LLM  => generation 
+
+which chunk is having the high score that chunk is output of retriever 
+
+Sorry, I do not have the information you asked. => Abstain related testing 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Augment :
+Generation: 
+
+
+
+
+b. Agent based applications 
+
+
+
