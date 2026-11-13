@@ -1,0 +1,113 @@
+Good Morning !!!!!
+=====================
+Recap !
+
+We are trying to understand different keywords required to understand Gen AI testing . 
+
+1. LLM => AI BRAIN 
+2. Tokens => our prompt is converted into tokens =>3/4 of word is a token 
+3. tokenizer => convert text into tokens => token Ids 
+4. embeddings  => convert these tokens into vectors 
+5. vectors DB => 
+6. chunks => splitting the a document into small pieces . based on the paragraphs. a paragraph is a chunk [ this paragraph should have a meaning ] 
+
+7. knowledge base => data repository => all the input data supplied to the ai brain [ company files ] 
+8. Retrieval => matching chunks retrieved by retriever 
+9. Augment => adding these retrieved chunks + prompt 
+10. Generation => LLM generated the response for the given prompt with reference to retrieved chunks 
+11. Grounding => referenced answer => from which data chunk we are generating this response. which document is considering for the generation of answer. 
+chunk , chunks => document 
+12. hallucination => No reference document , then it is Imaginate by AI and generated does not exist information . 
+=> AI may lie 
+=> AI may give wrong answer 
+=> AI may invent the answer for you 
+=> Try to check before use the generated answer 
+
+13. guardrails => Safety filters => safe guard the generated answer.
+harmful answer 
+if it is against to the laws
+=> at input gate we do have guardrails => 
+=> at output gate we do have guardrails 
+
+Filter the harmful questions in the input guardrail => we need to reject the harmful question. 
+
+I want to kill my patient with more dosage of ibuprofen? 
+
+what are the side effects of ibuprofen?
+
+if your answer is mentioned like : you can kill a person with ibuprofen 3 times daily for 2 day. 
+ output guardrails =>  
+
+14. Context => background of this question 
+more introduction to this question 
+15. context window => whiteboard  => 20 prompts and their answers we can save in temp memory => 2,00,000 tokens is the context window 
+
+at a time how much background you can send to the AI brain. 
+
+Knowledge = What I know.
+
+Context = What information is relevant to your current question.
+
+Reasoning = How I use that information to construct an answer.
+
+16. Temperature : Creativity 
+
+0 to 2 
+
+0 > it is deterministic  => every attempt almost same response like your traditional application 
+
+if you increase the temperature of the application the creativity of the AI brain is creased to expert level. 
+
+0.7 => the attempt #1 answer is not similar to attempt #2 
+
+1 => attempt #1 answer is totally different than attempt answer#2 
+
+2 => more irrelevant to attempt #1 and attempt#2 
+
+
+expert student  => his reasoning and logics are very creative ?
+avg student => 0.7 => 
+dull student => 0 => 
+
+0.7 temperature . 
+
+17. Biasing : AI should not take one side. all are equal 
+
+18. blue teaming => trying to test whether the AI is generated the accurate response or not for the given prompt. 
+a. correctness 
+b. relevancy 
+c. factuality
+d. faithfulness 
+ 
+19. red teaming  => try to test whether we can break the AI or not. trying fabricate the AI response with your intelligent prompts.
+
+a. trying to make AI fail 
+b, trying to generated lied answers 
+c. trying to Imaginate never exist thing 
+d. trying to overwrite the rules 
+e. trying to bypass the rules 
+f. trying to manipulate the context 
+g. trying to biasing the ai 
+h. trying to fool the AI 
+
+20. Purple teaming  = blue +red teaming  => this is your job . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
