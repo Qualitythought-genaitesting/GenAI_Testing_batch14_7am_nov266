@@ -97,6 +97,23 @@ factuality /grounded answer => safety
 => LLM as a judge => you  can hire AI to do your test like you 
 => one AI brain testing another AI brain generated answer is as per the expected criteria or not .
 
+1. Download the zip file 
+2. extract the zipfile in your own folder 
+3. 
+
+
+
+Agentic AI : 
+
+a. blackbox testing  => htps://promptfoo.dev 
+
+unit testing tool: 
+a. Deepeval 
+b. RAGAS 
+
+
+
+
 
 
 
