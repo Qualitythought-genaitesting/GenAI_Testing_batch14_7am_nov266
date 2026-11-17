@@ -1,0 +1,119 @@
+Good Morning !!!!!
+==================
+Recap! 
+
+Gen AI application is like you phone key board to predict next keyword based on the past chatting reference. 
+
+Like wise AI is also predicting the next keyword 
+
+as a tester :
+
+1. Latency or delay 
+2. cost 
+3. unsafe or bias 
+4. data leaks 
+5. intelligent prompt to break the AI 
+6. made up answers => hallucination => imagination => try to generate never exist answer
+7. every attempt new answer  => non deterministic behavior or probabilistic behavior 
+
+=> your simple text question to the AI or prompt => AI is not able to understand your natural language directly.
+
+instead your text is converted into tokens [3/4 th of a word]
+tokenizer for every model is available and that is useful split the text into small chunks => tokens 
+
+context: is a background 
+
+question + background => LLM to generate the answer 
+
+
+context window = at a time howmuch information we can transfer to the LLM 
+how many token we can send to the LLM ?
+
+
+
+Text => tokenizer  => tokens => embedding model => convert token into a meaningful  numeric vector. 
+
+Vector DB => chroma DB => we store vector  [ numerical form of a text or paragraph ] this numerical form of data only understandable to AI brain 
+
+
+Hallucination => made-up => Imaginate => orphan no reference exist
+Grounding  => opp to hallucination => reference answer we are generated 
+Guardrail => safety filter based on the application hidden rules or inside  
+             rules. This is trying to filter the bad output 
+Latency => 
+
+user prompt  => customer question 
+system prompt  => your application rules 
+
+
+https://platform.openai.com/tokenizer
+
+how to avoid exact match in the Gen AI testing : 
+
+Good answer  => expected answer  => expected result 
+
+=> important words or sentences => key facts => should be present 
+=> means the same  => similar meaning should be present in any attempt 
+=> Right format  => you are asking bullet point with summary only 
+                 => summaries the answer in your expected way 
+                 => PPT => output must be a ppt /excel => 
+=> stay safe => no data leaks , no unsafe content 
+=> Rubric score  => LLM as a judge => one AI brain testing another AI brain based on the testing criteria you provided . 
+=> Supply what kind of key facts you are suppose to test as a human tester or human evaluator the same input supplies to the AI brain or LLM to think like you and provide testing verdict. 
+
+a. answer should be in simple English 
+b. answer summarize in 100 words with 3/5 sentences 
+c. is it a fun story 
+d. is it executable code 
+e. is it a one click installer 
+=> one time testing is not sufficient for gent ai test cases - as every attempt changing the answer.  to compensate this probabilistic behavior we are suppose execute every test 3 to 5 times and consider the average score of these attempts to add a verdict to the test case. 
+Good - 3 / 0.5
+Excellent - 4 /1
+average - 2/0.3 
+bad - 1 /0
+
+attempt#1  => 3
+attempt#2  => 3
+attempt#3  => 2
+             ===
+              8
+             ====
+8/3 = 2.X => good 
+
+threshold = acceptable value  => 3 
+Test case  = Fail 
+
+1. down load medguideLab project zip file 
+2. extract the zip 
+3. install python  => download and install 
+4. run the run_al.bat 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
